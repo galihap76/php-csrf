@@ -67,8 +67,8 @@ include "db.php";
             // Proses login dan lakukan validasi
             $sql = "SELECT * FROM tbl_auth WHERE username = :username AND password = :password";
             $stmt = $conn->prepare($sql);
-            $stmt->bindParam("username", $username);
-            $stmt->bindParam("password", $password);
+            $stmt->bindParam(":username", $username);
+            $stmt->bindParam(":password", $password);
             $stmt->execute();
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
