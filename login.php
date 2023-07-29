@@ -30,7 +30,6 @@ include "db.php";
         </ul>
     </form>
 
-    <!-- Php script -->
     <?php
 
     // Fungsi untuk menghasilkan token CSRF acak
@@ -91,7 +90,6 @@ include "db.php";
         }
     }
     ?>
-    <!-- </End php script -->
 
 </body>
 
